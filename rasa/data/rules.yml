@@ -1,0 +1,92 @@
+version: "3.1"
+rules:
+
+- rule: Приветствие
+  steps:
+  - intent: приветствие
+  - action: utter_greet
+
+- rule: Прощание
+  steps:
+  - intent: прощание
+  - action: utter_goodbye
+
+- rule: Запрос помощи
+  steps:
+  - intent: запрос_помощи
+  - action: utter_help
+
+- rule: Информация о проекте
+  steps:
+  - intent: описание_архитектуры
+  - action: utter_project_info
+
+- rule: Выбор технологии
+  steps:
+  - intent: выбор_технологий
+  - action: utter_tech_info
+
+- rule: Микросервисная архитектура
+  steps:
+  - intent: микросервисы
+  - action: utter_microservice_info
+
+- rule: Монолитная архитектура
+  steps:
+  - intent: монолит
+  - action: utter_monolith_info
+
+- rule: Интеграция систем
+  steps:
+  - intent: интеграция_систем
+  - action: utter_integration_info
+
+- rule: Обеспечение безопасности
+  steps:
+  - intent: безопасность
+  - action: utter_security_info
+
+- rule: Улучшение производительности
+  steps:
+  - intent: производительность
+  - action: utter_help
+
+- rule: Масштабируемость системы
+  steps:
+  - intent: масштабируемость
+  - action: utter_scalability_info
+
+- rule: Обеспечение отказоустойчивости
+  steps:
+  - intent: отказоустойчивость
+  - action: utter_resilience_info
+
+- rule: Документация архитектуры
+  steps:
+  - intent: документация
+  - action: utter_help
+
+- rule: Оркестрация микросервисов
+  steps:
+  - intent: оркестрация_микросервисов
+  - action: utter_help
+
+- rule: Сервисная сеть
+  steps:
+  - intent: сервисная_сеть
+  - action: utter_help
+
+- rule: Безопасность микросервисов
+  steps:
+  - intent: безопасность_микросервисов
+  - action: utter_security_info
+
+- rule: Масштабируемость микросервисов
+  steps:
+  - intent: масштабируемость
+  - action: utter_scalability_info
+
+- rule: Отказоустойчивость микросервисов
+  steps:
+  - intent: отказоустойчивость_микросервисов
+  - action: utter_resilience_info

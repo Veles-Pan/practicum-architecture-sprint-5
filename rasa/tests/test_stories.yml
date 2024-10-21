@@ -1,0 +1,29 @@
+#### This file contains tests to evaluate that your bot behaves as expected.
+#### If you want to learn more, please see the docs: https://rasa.com/docs/rasa/testing-your-assistant
+
+stories:
+- story: path 1
+  steps:
+  - user: |
+      Привет-привет!
+    intent: приветствие
+  - action: utter_greet
+  - user: |
+      Не могли бы вы мне помочь?
+    intent: запрос_помощи
+  - action: utter_help
+
+- story: path 2
+  steps:
+  - user: |
+      Привет, есть минутка?
+    intent: приветствие
+  - action: utter_greet
+  - user: |
+      Что такое архитектура решений?
+    intent: описание_архитектуры
+  - action: utter_project_info
+  - user: |
+      До свидания
+    intent: прощание
+  - action: utter_goodbye
